@@ -1,0 +1,43 @@
+AION Embedded Linux - meta-local
+================================
+
+This Yocto layer contains the custom recipes and configuration
+for AION Embedded Linux on Raspberry Pi 3 (64-bit).
+
+Project:
+  AI-Now Yocto Raspberry Pi 3
+
+Target:
+  Raspberry Pi 3 Model B
+  ARM64 (aarch64)
+
+Yocto:
+  Scarthgap (5.0 LTS)
+
+Features:
+  - Linux console with UTF-8 and CJK support
+  - kmscon terminal on tty1
+  - Traditional getty recovery console on tty2
+  - NetworkManager with Wi-Fi support
+  - OpenSSH remote access
+  - Avahi / mDNS discovery
+  - Raspberry Pi wireless firmware
+  - systemd service integration
+
+Custom image recipes:
+  core-image-base-cjk.bb
+  core-image-aion.bb
+
+Dependencies:
+  poky
+  meta-openembedded
+  meta-raspberrypi
+
+Build target:
+  bitbake core-image-aion
+
+This repository excludes music collections, local build caches,
+generated SD card images and upstream Yocto source trees.
+
+License:
+  MIT (see COPYING.MIT)

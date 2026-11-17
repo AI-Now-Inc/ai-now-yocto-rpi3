@@ -1,0 +1,66 @@
+# Yocto build output
+/build/
+/image-inspection/
+/upstream-inspection/
+/mirrors/
+/sources/
+
+# Upstream source repositories
+/poky/
+/meta-openembedded/
+/meta-raspberrypi/
+
+# Generated images
+*.wic
+*.wic.bz2
+*.wic.gz
+*.rpi-sdimg
+*.ext4
+*.rootfs.tar.*
+
+# Build caches
+tmp/
+downloads/
+sstate-cache/
+cache/
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.ovpn
+
+# Temporary files
+*.bak
+*.backup
+*.swp
+*~
+__pycache__/
+
+# Music experiments
+/flash-cjk-music.sh
+
+# Exclude offline music edition
+/meta-local/recipes-multimedia/music-library/
+/meta-local/recipes-core/images/core-image-base-cjk-music.bb
+
+# Audio collections
+*.flac
+*.mp3
+*.m4a
+*.ogg
+*.wav
+*.m3u
+*.m3u8
+
+# Development backups
+*.backup-*
+*.before-systemd
+
+# Optional music-related recipes
+/meta-local/recipes-devtools/python/python3-mutagen_1.47.0.bb
+/meta-local/recipes-devtools/python/files/mutagen-1.47.0.tar.gz
+/meta-local/recipes-multimedia/mplayer/
